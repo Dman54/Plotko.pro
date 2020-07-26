@@ -36,6 +36,7 @@ button {
     width: 33px;
     position: relative;
     margin: 13px 0;
+    display: none;
 }
 .burger:after {
     content: '';
@@ -301,6 +302,10 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+.price-block_right .panel:last-child {
+    margin-bottom: 0;
 }
 .panel.active {
     max-height: 100%;
@@ -310,7 +315,7 @@ button {
     margin-top: 20px;
 }
 .panel >*:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .multilist {
     display: flex;
