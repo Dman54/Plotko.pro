@@ -25,7 +25,6 @@ button {
     width: 100%;
     max-width: 1194px;
     margin: 0 auto;
-    overflow-x: hidden;
 }
 .header {
     padding-top: 35px;
@@ -770,6 +769,9 @@ button {
     }
     .btn-back {
         right: 0px;
+    }
+    .wrapper {
+        overflow-x: hidden;
     }
 }
 
