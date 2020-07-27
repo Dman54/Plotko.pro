@@ -616,12 +616,12 @@ button {
     justify-content: space-between;
 }
 .footer .wrapper>* {
-    flex:4;
+    flex:1;
 }
 .footer .socials_copyright {
     display: flex;
     justify-content: space-between;
-    flex:4;
+    flex:2;
 }
 
 .contacts,
@@ -773,6 +773,9 @@ button {
     .wrapper {
         overflow-x: hidden;
     }
+    .footer .wrapper {
+        overflow-x: unset;
+    }
 }
 
 @media (max-width: 1214px) {
@@ -829,7 +832,7 @@ button {
 @media (max-width: 990px) {
     .footer .socials_copyright {
         display: block;
-        flex: 4;
+        flex: 1;
     }
     .copyright {
         margin-top: 20px;
