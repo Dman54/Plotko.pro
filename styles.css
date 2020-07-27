@@ -25,6 +25,7 @@ button {
     width: 100%;
     max-width: 1194px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .header {
     padding-top: 35px;
@@ -1020,6 +1021,9 @@ button {
         margin-bottom: 10px;
         width: calc(100% - 110px);
     }
+    .reviews-block .arrow {
+        top: -10px;
+    }
     .call-block {
         margin-top: 30px;
     }
@@ -1206,6 +1210,10 @@ button {
     }
     .slider.carousel {
         background-color: unset;
+        height: auto;
+    }
+    .dots {
+        bottom: 130px;
     }
     .slider .slider-item {
         flex-direction: column;

@@ -78,7 +78,7 @@ window.onload = function () {
         } else if (width > 520) {
             document.querySelector('.portfolio-block').style.marginBottom = 50 + maxHeight + 'px';
         } else {
-            document.querySelector('.portfolio-block').style.marginBottom = 105 + maxHeight + 'px';
+            document.querySelector('.portfolio-block').style.marginBottom = -15 + maxHeight + 'px';
         }
     }
 
