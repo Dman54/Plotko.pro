@@ -2,8 +2,11 @@ var slideIndex2, width, slider2_width = 800;
 
 window.addEventListener('resize', windowresize);
 function windowresize() {
+    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // location.reload();
 }
+
+// document.addEventListener("DOMContentLoaded", ready);
 
 window.onload = function () {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
