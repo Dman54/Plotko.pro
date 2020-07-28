@@ -1,15 +1,15 @@
 var slideIndex2, width, slider2_width = 800;
 width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-console.log(width);
+// console.log(width);
 window.addEventListener('resize', windowresize);
 function windowresize() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // location.reload();
 }
 
-// document.addEventListener("DOMContentLoaded", ready);
+document.addEventListener("DOMContentLoaded", ready);
 
-window.onload = function () {
+function ready() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // console.log(width);
 
@@ -65,16 +65,16 @@ window.onload = function () {
         setHeight();
     }
     function setHeight() {
+        if (width > 990) {
+            return;
+        }
         var maxHeight = 0;
         Array.from(document.querySelectorAll('.item-description')).forEach((item, index) => {
-            console.log(item.offsetHeight);
+            // console.log(item.offsetHeight);
             if (maxHeight < item.offsetHeight) {
                 maxHeight = item.offsetHeight;
             }
         });
-        if (width > 990) {
-            return;
-        }
         if (width > 900) {
             document.querySelector('.portfolio-block').style.marginBottom = 80 + maxHeight + 'px';
         } else if (width > 710) {
@@ -126,6 +126,7 @@ window.onload = function () {
         }
     }
 
+    // menu
     document.querySelector(".burger").addEventListener('click', event => {
         openMenu(event.target);
     });
@@ -137,4 +138,8 @@ window.onload = function () {
         document.querySelector(".topmenu").classList.toggle("open");
         document.querySelector(".sidebar-overlay").classList.toggle("open");
     }
-};
+}
+
+// window.onload = function () {
+//     ready();
+// };

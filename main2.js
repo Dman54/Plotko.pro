@@ -1,16 +1,17 @@
 var slideIndex2, width, slider2_width = 800, slider3_width = 700;
 width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-console.log(width);
+// console.log(width);
 window.addEventListener('resize', windowresize);
 function windowresize() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // location.reload();
 }
 
-// document.addEventListener("DOMContentLoaded", ready);
+document.addEventListener("DOMContentLoaded", ready);
 
-window.onload = function () {
+function ready() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    // console.log(width);
 
     // slider3
     var slides = document.querySelectorAll(".slider3 .slider-item");
@@ -103,4 +104,8 @@ window.onload = function () {
         document.querySelector(".topmenu").classList.toggle("open");
         document.querySelector(".sidebar-overlay").classList.toggle("open");
     }
-};
+}
+
+// window.onload = function () {
+//     ready();
+// };
