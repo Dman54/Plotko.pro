@@ -1,5 +1,6 @@
 var slideIndex2, width, slider2_width = 800;
-
+width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+console.log(width);
 window.addEventListener('resize', windowresize);
 function windowresize() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -10,7 +11,7 @@ function windowresize() {
 
 window.onload = function () {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    console.log(width);
+    // console.log(width);
 
     // accordion
     var acc = document.getElementsByClassName("accordion");

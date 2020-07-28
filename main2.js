@@ -1,5 +1,6 @@
-var slideIndex2, width, slider2_width = 800;
-
+var slideIndex2, width, slider2_width = 800, slider3_width = 700;
+width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+console.log(width);
 window.addEventListener('resize', windowresize);
 function windowresize() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -10,9 +11,8 @@ function windowresize() {
 
 window.onload = function () {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    console.log(width);
 
-    // slider
+    // slider3
     var slides = document.querySelectorAll(".slider3 .slider-item");
     var slideIndex = 1;
     document.querySelector(".slider3 .prev").addEventListener('click', event => {
@@ -38,8 +38,19 @@ window.onload = function () {
         }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
+            slides[i].style.marginRight = "0";
+            slides[i].style.order = "0";
         }
         slides[slideIndex - 1].style.display = "block";
+        if (width > slider3_width) {
+            slides[slideIndex - 1].style.marginRight = "30px";
+            if (n == slides.length || n == 0) {
+                slides[0].style.display = "block";
+                slides[0].style.order = "1";
+            } else {
+                slides[slideIndex].style.display = "block";
+            }
+        }
     }
 
     // slider2
@@ -52,11 +63,9 @@ window.onload = function () {
     })
     slideIndex2 = 1;
     showSlides2(slideIndex2);
-
     function plusSlides2(n) {
         showSlides2(slideIndex2 += n);
     }
-
     function showSlides2(n) {
         var i;
         if (n > slides2.length) {
@@ -82,6 +91,7 @@ window.onload = function () {
         }
     }
 
+    // menu
     document.querySelector(".burger").addEventListener('click', event => {
         openMenu(event.target);
     });
