@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Плотко строительная компания. Ремонт квартир</title>
+    <meta name="description"
+        content="Строительная компания Плотко уже более 10 лет предоставляет услуги по ремонту квартир">
+    <meta name="Keywords"
+        content="строительная компания, ремонт квартир, Плотко, ремонт в новостройке, косметический ремонт, капитальный ремонт, эксклюзивный ремонт, дизайн-проект">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_about.css" />
+</head>
+
+<body class="about">
+    <div class="wrapper">
+        <header id="header" class="header">
+            <nav class="first-nav d-flex">
+                <div class="logo">
+                    <a href="/"><img src="img/logo.svg" alt="Строительная компания Плотко"></a>
+                </div>
+                <div class="burger"></div>
+                <ul class="topmenu">
+                    <li><a href="/about.html">О компании</a></li>
+                    <li><a href="/">Услуги <span class="arrow-down"></span></a>
+                        <ul class="submenu">
+                            <li><a href="/">Ремонт квартир </a></li>
+                            <li><a href="/index2.html">Полусухая стяжка</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="first-container">
+                <div class="first-container_left">
+                    <h1 class="h1"><span class="normal">Строительная компания</span> Плотко</h1>
+                    <div class="phone">
+                        <a href="tel:+74993449195">
+                            +7 499 344 91 95
+                        </a>
+                    </div>
+                    <div class="get_call">
+                        <a href="#do_call" class="btn"><span class="icon icon-call"></span> <span>Заказать
+                                звонок</span></a>
+                    </div>
+                </div>
+                <div class="first-container_right">
+                    <img class="img-big" src="img/img7-min.jpg" alt="Ремонт квартир">
+                </div>
+            </div>
+        </header>
+        <div class="text-block">
+            <p>Уже более 10 лет мы предоставляем услуги по строительству и ремонту. На нашем счету сотни выполненых
+                проектов и довольных клиентов. Проектировщики, дизайнеры, инженеры и строители в штате, прямые контакты
+                с
+                поставщиками стройматериалов, опыт ремонтных работ более 10 лет позволяют нам устанавливать низкие цены,
+                давать гарантии на результат работ.</p>
+        </div>
+        <div class="advantages">
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <img class="icon-star" src="img/sprite2.png" alt="Стаж работы">
+                </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">2009</div>
+                    <div class="advantages-item-text">Работаем с&nbsp;2009 года</div>
+                </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <img class="icon-check_mark" src="img/sprite2.png" alt="Завершённые проекты">
+                </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">500</div>
+                    <div class="advantages-item-text">Завершённых проектов</div>
+                </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <img class="icon-command" src="img/sprite2.png" alt="Специалисты в команде">
+                </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">125</div>
+                    <div class="advantages-item-text">Специалистов в&nbsp;команде</div>
+                </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <img class="icon-equipment" src="img/sprite2.png" alt="Количество единиц техники">
+                </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">30</div>
+                    <div class="advantages-item-text">Единиц техники</div>
+                </div>
+            </div>
+        </div>
+        <div class="call-block">
+            <h2 id="do_call" class="h1">Заказать звонок</h2>
+            <p class="text mb-30">Оставьте заявку и наш специалист перезвонит вам и предоставит консультацию по услугам
+                нашей
+                компании,
+                поможет оформить заказ и ответит на все ваши вопросы.</p>
+            <form method="post" id="do_call_form" name="do_call_form" action="do_call_form.php">
+                <div class="form-row form-row1">
+                    <div class="form-row-left">
+                        <label for="name">Имя*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row-right">
+                        <label title="Телефон может состоять из цифр, скобок, пробелов, - или +" for="phone">Номер
+                            телефона*</label>
+                        <input title="Телефон может состоять из цифр, скобок, пробелов, - или +" type="tel" id="phone"
+                            name="phone" pattern="[0-9\(\)\s\-\+]+" placeholder="+79876543210" required>
+                    </div>
+                </div>
+                <label for="comment">Коментарий</label>
+                <textarea name="comment" id="comment"></textarea>
+                <div class="form-row form-row2">
+                    <button type="submit" class="btn"><span class="icon icon-call"></span> <span>Оставить
+                            заявку</span></button>
+                    <div class="text ml-15">* — обязательные для заполнения поля</div>
+                </div>
+            </form>
+            <a href="#header" class="btn-back">вверх</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/"><img src="img/logo2.svg" alt="Строительная компания Плотко"></a>
+            </div>
+            <div class="contacts">
+                <div class="contacts-phone">
+                    <a href="tel:+74993449195">
+                        <div class="icon icon-phone"></div>
+                        <div>+7 499 344 91 95</div>
+                    </a>
+                </div>
+                <div class="contacts-email">
+                    <a
+                        href="mailto:mail@protko.pro?subject=Заявка%20с%20сайта%20the%20protko.pro&body=Пишу%20с%20сайта%20the%20protko.pro">
+                        <div class="icon icon-email"></div>
+                        <div>mail@protko.pro</div>
+                    </a>
+                </div>
+                <div class="contacts-address">
+                    <div class="icon icon-address"></div>
+                    г. Москва<br>
+                    ул. Промышленная 8
+                </div>
+            </div>
+            <div class="socials_copyright">
+                <div class="socials">
+                    <div class="social">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fplotko.pro" target="_blank">
+                            <div class="icon icon-fb"></div>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="https://vk.com/share.php?url=Plotko.pro" target="_blank">
+                            <div class="icon icon-vk"></div>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <div class="icon icon-yt"></div>
+                    </div>
+                    <div class="social">
+                        <div class="icon icon-inst"></div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="copyright1">
+                        Не является публичной офертой</div>
+                    <div class="copyright2">
+                        © 2020 plotko.com</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="sidebar-overlay"></div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

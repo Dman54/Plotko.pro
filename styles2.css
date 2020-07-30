@@ -1,5 +1,4 @@
-.h1_normal {
-    font-weight: normal;
+.screed .first-container .h1 {
     margin-bottom: 74px;
 }
 .screed .first-container_left {
@@ -241,38 +240,11 @@
     color: #E6B1FF;
 }
 
-.icon-img3_1 {
-    background-image: url(img/sprite2.png);
-    background-position: 0px 0px;
-    width: 90px;
-    height: 90px;
-}
-.icon-img3_2 {
-    background-image: url(img/sprite2.png);
-    background-position: -90px 0px;
-    width: 90px;
-    height: 90px;
-}
-.icon-img3_3 {
-    background-image: url(img/sprite2.png);
-    background-position: 0px -90px;
-    width: 90px;
-    height: 90px;
-}
-.icon-img3_4 {
-    background-image: url(img/sprite2.png);
-    background-position: -90px -90px;
-    width: 90px;
-    height: 90px;
-}
-
 @media (max-width: 1100px) {
-    .h1_normal {
-        margin-bottom: 37px;
-    }
     .screed .first-container .h1 {
         font-size: 28px;
         line-height: 34px;
+        margin-bottom: 37px;
     }
     .screed .first-container_left {
         padding-right: 30px;
@@ -372,8 +344,6 @@
     .screed .first-container .h1 {
         font-size: 24px;
         line-height: 29px;
-    }
-    .h1_normal {
         margin-bottom: 20px;
     }
     .screed .phone {

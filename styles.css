@@ -19,6 +19,9 @@ button {
 .d-flex {
     display: flex;
 }
+.normal {
+    font-weight: normal;
+}
 .wrapper {
     padding-left: 27px;
     padding-right: 27px;

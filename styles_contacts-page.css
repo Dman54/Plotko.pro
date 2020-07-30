@@ -1,0 +1,129 @@
+.contacts-page .first-nav {
+    margin-bottom: 100px;
+}
+.contacts-page .call-block {
+    margin-top: 100px;
+}
+.contacts-page-text {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #444444;
+}
+.contacts-container .contacts, .contacts-container .contacts a {
+    font-weight: 500;
+    color: #444444;
+}
+.contacts-container .contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-container .icon {
+    filter: invert(1);
+}
+.contacts-container .social {
+    background-color: #444444;
+}
+.contacts-container .social:hover {
+    background-color: #EDCA4B;
+}
+.contacts-container .socials {
+    flex-wrap: wrap;
+}
+.socials-name {
+    font-weight: 500;
+    line-height: 130%;
+    color: #444444;
+    min-width: 100%;
+    margin-bottom: 10px;
+}
+.phone-with-text {
+    max-width: 134px;
+}
+.contacts .socials .icon {
+    margin-right: 0;
+}
+.contacts-container .contacts >*{
+    margin-bottom: 0;
+    flex: 6;
+}
+.contacts-container .contacts .contacts-phone,
+.contacts-container .contacts .contacts-email {
+    flex: 5;
+}
+.contacts .social {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+.contacts .social .icon {
+    width: 24px;
+    height: 24px;
+    background-size: 72px;
+}
+.contacts .icon-vk {
+    background-position: -48px 0px;
+}
+.contacts .icon-yt {
+    background-position: 0px -24px;
+}
+.contacts .icon-inst {
+    background-position: -48px -24px;
+}
+.contacts .social .icon-fb {
+    width: 30px;
+    height: 30px;
+    background-position: -36px -36px;
+    background-size: 108px;
+}
+.contacts .socials >.social:nth-child(2) {
+    padding: 10px 3px 0px;
+}
+
+@media (max-width: 950px) {
+    .contacts-page .first-nav {
+        margin-bottom: 80px;
+    }
+    .contacts-page-text {
+        margin-bottom: 40px;
+    }
+    .contacts-container .contacts {
+        flex-wrap: wrap;
+    }
+    .contacts-container .contacts>* {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .contacts-container .contacts-address,
+    .contacts-container .socials {
+        margin-bottom: 0;
+    }
+    .contacts-page .call-block {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 710px) {
+    .contacts-page .first-nav {
+        margin-bottom: 40px;
+    }
+    .contacts .socials {
+        justify-content: unset;
+    }
+    .contacts-page-text {
+        margin-bottom: 20px;
+    }
+    .contacts-page .call-block {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contacts-container .contacts {
+        display: block;
+    }
+    .contacts-container .contacts-address {
+        margin-bottom: 30px;
+    }
+}
