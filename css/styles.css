@@ -10,6 +10,9 @@ body {
 a {
     text-decoration: none;
 }
+.a {
+    cursor: pointer;
+}
 button {   
     border: none;
 }
@@ -82,7 +85,8 @@ button {
     align-items: flex-start;
     margin-bottom: 45px;
 }
-.first-nav a {
+.first-nav a,
+.first-nav .a {
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -95,8 +99,8 @@ button {
     display: flex;
 }
 .topmenu > li {
-  position: relative;
-  margin-left: 30px;
+    position: relative;
+    margin-left: 30px;
 }
 .topmenu > li:first-child {
     margin-left: 0;
@@ -104,13 +108,15 @@ button {
 .topmenu>li>a {
     height: 18px;
 }
-.topmenu>li>a:hover {
+.topmenu>li>a:hover,
+.topmenu>li>.a:hover {
     font-weight: bold;
 }
 .topmenu>li:last-child>a:hover {
     letter-spacing: 0.03em;
 }
-.topmenu>li>a:hover:after {
+.topmenu>li>a:hover:after,
+.topmenu>li>.a:hover:after {
     display: block;
     content: '';
     height: 1px;
@@ -1072,15 +1078,18 @@ button {
     .topmenu > li {
         margin-left: 0;
     }
-    .topmenu > li>a {
+    .topmenu > li>a,
+    .topmenu > li>.a {
         height: auto;
         padding: 12px 27px;
         background-color: #fff;
     }
-    .topmenu > li>a:hover:after {
+    .topmenu > li>a:hover:after,
+    .topmenu > li>.a:hover:after {
         display: none;
     }
-    .topmenu > li>a:hover {
+    .topmenu > li>a:hover,
+    .topmenu > li>.a:hover {
         background-color: #EFEFEF;
     }
     .topmenu.open {
@@ -1127,7 +1136,8 @@ button {
         top: 58px;
         margin-left: -10px;
     }
-    .topmenu > li>a {
+    .topmenu > li>a,
+    .topmenu > li>.a {
         padding: 12px 10px;
     }
     .submenu>li a {
