@@ -80,7 +80,6 @@
 .contacts .socials >.social:nth-child(2) {
     padding: 10px 3px 0px;
 }
-
 @media (max-width: 950px) {
     .contacts-page .first-nav {
         margin-bottom: 80px;
@@ -103,7 +102,6 @@
         margin-top: 80px;
     }
 }
-
 @media (max-width: 710px) {
     .contacts-page .first-nav {
         margin-bottom: 40px;
@@ -118,7 +116,6 @@
         margin-top: 50px;
     }
 }
-
 @media (max-width: 520px) {
     .contacts-container .contacts {
         display: block;

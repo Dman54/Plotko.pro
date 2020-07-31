@@ -48,7 +48,6 @@
 .advantages-item img.icon-equipment {
     object-position: -90px -90px;
 }
-
 @media (max-width: 1000px) {
     .advantages {
         margin-top: -5px;
@@ -63,7 +62,6 @@
         margin-bottom: 50px;
     }
 }
-
 @media (max-width: 710px) {
     .about .first-container .h1 {
         max-width: 270px;
@@ -80,7 +78,6 @@
         margin-bottom: 20px;
     }
 }
-
 @media (max-width: 500px) {
     .advantages-item {
         min-width: 100%;

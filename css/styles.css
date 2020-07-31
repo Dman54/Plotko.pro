@@ -32,7 +32,6 @@ button {
 .header {
     padding-top: 35px;
 }
-
 .burger {
     border-top: 4px solid #444444;
     border-bottom: 4px solid #444444;
@@ -78,7 +77,6 @@ button {
     transform: rotate(-45deg);
     transition: all 0.25s linear;
 }
-
 .first-nav {
     justify-content: space-between;
     align-items: flex-start;
@@ -92,7 +90,6 @@ button {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #444444;
-    /* transition: .2s linear; */
 }
 .topmenu {
     display: flex;
@@ -154,7 +151,6 @@ button {
 .submenu>li:first-child a {
     border-bottom: 1px solid #C4C4C4;
 }
-
 .first-container {
     width: 1043px;
     height: 400px;
@@ -172,7 +168,6 @@ button {
     width: 555px;
     margin-top: -60px;
     margin-right: -127px;
-    /* position: absolute; */
 }
 .h1 {
     font-weight: bold;
@@ -231,7 +226,6 @@ button {
 .btn-back:hover {
     background-color: #444;
 }
-
 .text-block {
     display: flex;
     margin-top: 60px;
@@ -247,7 +241,6 @@ button {
 .text-block_right {
     flex:1;
 }
-
 .price-block {
     display: flex;
 }
@@ -277,12 +270,6 @@ button {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
-    /* width: 100%;
-    border: none; */
-    /* text-align: left; */
-    /* outline: none; */
-    /* font-size: 15px; */
     transition: 0.4s;
 }
 .accordion-left {
@@ -367,7 +354,6 @@ button {
     background-color: #F0C118;
     margin-left: -25px;
     margin-right: 15px;
-    /* margin-bottom: 2px; */
 }
 .portfolio-block {
     margin-top: 60px;
@@ -496,7 +482,6 @@ button {
     top: 4px;
     transform: rotate(-45deg);
 }
-
 .reviews-block {
     position: relative;
 }
@@ -547,7 +532,6 @@ button {
     line-height: 130%;
     color: #444444;
 }
-
 .call-block {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -581,7 +565,6 @@ button {
     margin-right: 30px;
 }
 #do_call_form label {
-    /* display: block; */
     line-height: 20px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -608,7 +591,6 @@ button {
 .form-row2 >.btn {
     min-width: 312px;
 }
-
 .footer {
     background-color: #343434;
     padding-top: 60px;
@@ -626,7 +608,6 @@ button {
     justify-content: space-between;
     flex:2;
 }
-
 .contacts,
 .contacts a,
 .copyright {
@@ -671,12 +652,11 @@ button {
     margin-top: 20px;
     line-height: 1;
 }
-
 .socials >.social:first-child {
     padding: 7px 3px 3px;
 }
 .icon {
-    background-image: url(img/sprite.png);
+    background-image: url(../img/sprite.png);
     width: 24px;
     height: 24px;
 }
@@ -703,29 +683,22 @@ button {
 .icon-address {
     background-position: -24px 0px;
 }
-
 .icon-vk, .icon-yt, .icon-inst{
     background-size: 60px;
 }
 .icon-fb {
-    /* background-position: -24px -24px; */
     background-position: -30px -30px;
     background-size: 90px;
 }
 .icon-vk {
-    /* background-position: -48px 0px; */
     background-position: -40px 0px;
 }
 .icon-yt {
-    /* background-position: 0px -24px; */
     background-position: 0px -20px;
 }
 .icon-inst {
-    /* background-position: -48px -24px; */
     background-position: -40px -20px;
 }
-
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -780,7 +753,6 @@ button {
         overflow-x: unset;
     }
 }
-
 @media (max-width: 1214px) {
     .slider.carousel {
         padding: 0;
@@ -818,7 +790,6 @@ button {
         min-width: 630px;
     }
 }
-
 @media (max-width: 1100px) {
     .first-container {
         width: calc(100% - 60px);
@@ -831,7 +802,6 @@ button {
         flex: 4;
     }
 }
-
 @media (max-width: 990px) {
     .footer .socials_copyright {
         display: block;
@@ -854,7 +824,6 @@ button {
         margin-bottom: 140px;
     }
 }
-
 @media (max-width: 900px) {
     .first-container_left {
         padding-right: 30px;
@@ -911,7 +880,6 @@ button {
         padding-bottom: 40px;
     }
 }
-
 @media (max-width: 800px) {
     .slider2 {
         display: block;
@@ -926,7 +894,6 @@ button {
         min-width: 200px;
     }
 }
-
 @media (max-width: 710px) {
     .h1 {
         font-size: 24px;
@@ -1076,7 +1043,6 @@ button {
         bottom: -30px;
     }
 }
-
 @media (max-width: 630px) {
     .burger {
         display: block;
@@ -1147,7 +1113,6 @@ button {
         margin-right: 0;
     }
 }
-
 @media (max-width: 550px) {
     .wrapper {
         padding-left: 10px;
@@ -1200,7 +1165,6 @@ button {
         padding-bottom: 15px;
     }
 }
-
 @media (max-width: 520px) {
     .accordion {
         padding: 10px 25px 10px 10px;
