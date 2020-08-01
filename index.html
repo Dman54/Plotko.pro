@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles_about.css" />
 </head>
 
-<body>
+<body class="about">
     <div class="wrapper">
         <header id="header" class="header">
             <nav class="first-nav d-flex">
@@ -25,23 +26,20 @@
                 </div>
                 <div class="burger"></div>
                 <ul class="topmenu">
-                    <li><a href="/about.html">О компании</a></li>
+                    <li><a class="active" href="/">О компании</a></li>
                     <li>
                         <div class="a">Услуги <span class="arrow-down"></span></div>
                         <ul class="submenu">
-                            <li><a href="/">Ремонт квартир </a></li>
-                            <li><a href="/index2.html">Полусухая стяжка</a></li>
+                            <li><a href="/remont-kvartir.html">Ремонт квартир </a></li>
+                            <li><a href="/polusuhaya-styajka.html">Полусухая стяжка</a></li>
                         </ul>
                     </li>
-                    <li><a href="/contacts.html" class="active">Контакты</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="first-container">
                 <div class="first-container_left">
-                    <h1 class="h1">Ремонт квартир</h1>
-                    <h2 class="h3">Строительная компания Плотко уже более 10&nbsp;лет предоставляет услуги по ремонту
-                        квартир
-                    </h2>
+                    <h1 class="h1"><span class="normal">Строительная компания</span> Плотко</h1>
                     <div class="phone">
                         <a href="tel:+74993449195">
                             +7 499 344 91 95
@@ -54,331 +52,71 @@
                 </div>
                 <div class="first-container_right">
                     <picture>
-                        <source srcset="img/img1-min.webp" type="image/webp">
-                        <source srcset="img/img1-min.jpg" type="image/jpeg">
-                        <img class="img-big" src="img/img1-min.jpg" alt="Ремонт квартир">
+                        <source srcset="img/img7-min.webp" type="image/webp">
+                        <source srcset="img/img7-min.jpg" type="image/jpeg">
+                        <img class="img-big" src="img/img7-min.jpg" alt="Ремонт квартир">
                     </picture>
                 </div>
             </div>
         </header>
         <div class="text-block">
-            <div class="text-block_left">
-                <p>Строительная компания Плотко уже более 10 лет предоставляет услуги по ремонту
-                    квартир. На нашем счету сотни выполненых проектов и довольных клиентов. Проектировщики, дизайнеры,
-                    инженеры и строители в штате, прямые контакты с поставщиками стройматериалов, опыт ремонтных работ
-                    более
-                    10 лет позволяют нам устанавливать низкие цены, давать гарантии на результат работ.</p>
-            </div>
-            <div class="text-block_right">
-                <p>В комплекс работ входят проектирование разводки электрики, замена
-                    сантехнических труб, обновление напольного покрытия, декоративная отделка комнат, нежилых помещений,
-                    другие мероприятия. Мы согласуем весь объем до подписания договора и сами закупим нужные материалы.
-                    От
-                    вас потребуется лишь принять результат.</p>
-            </div>
+            <p>Уже более 10 лет мы предоставляем услуги по строительству и ремонту. На нашем счету сотни выполненых
+                проектов и довольных клиентов. Проектировщики, дизайнеры, инженеры и строители в штате, прямые контакты
+                с
+                поставщиками стройматериалов, опыт ремонтных работ более 10 лет позволяют нам устанавливать низкие цены,
+                давать гарантии на результат работ.</p>
         </div>
-        <div class="price-block">
-            <div class="price-block_left">
-                <picture>
-                    <source srcset="img/img2-min.webp" type="image/webp">
-                    <source srcset="img/img2-min.jpg" type="image/jpeg">
-                    <img class="img-big2" src="img/img2-min.jpg" alt="Цены на ремонт квартир">
-                </picture>
-            </div>
-            <div class="price-block_right">
-                <h2 class="h1">Цены на ремонт квартир</h2>
-                <div class="accordion active">
-                    <div class="accordion-left">
-                        Косметический ремонт
-                    </div>
-                    <div class="accordion-right">
-                        от <span class="price">5800</span> руб/м²
-                    </div>
+        <div class="advantages">
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <picture>
+                        <source srcset="img/sprite2.webp" type="image/webp">
+                        <source srcset="img/sprite2.png" type="image/jpeg">
+                        <img class="icon-star" src="img/sprite2.png" alt="Стаж работы">
+                    </picture>
                 </div>
-                <div class="panel active">
-                    <div class="multilist">
-                        <ul class="squared-ul">
-                            <li>Демонтаж обоев</li>
-                            <li>Демонтаж финишного полового покрытия</li>
-                            <li>Подготовка поверхности потолка к покраске</li>
-                            <li>Монтаж обоев</li>
-                            <li>Монтаж полового покрытия (линолеум, либо ламинат)</li>
-                        </ul>
-                        <ul class="squared-ul">
-                            <li>Покраска потолка</li>
-                            <li>В санузлах частичный ремонт без замены сантехнических труб</li>
-                            <li>Установка розеток, выключателей и осветительные приборов </li>
-                            <li>*Замена электрики не производится</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion">
-                    <div class="accordion-left">
-                        Ремонт в новостройке
-                    </div>
-                    <div class="accordion-right">
-                        от <span class="price">6500</span> руб/м²
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="multilist">
-                        <ul class="squared-ul">
-                            <li>Возведение перегородок</li>
-                            <li>Штукатурка стен и дельнейшая подготовка к финишной отделке</li>
-                            <li>Электромонтажные работы</li>
-                            <li>Сантехнические работы</li>
-                        </ul>
-                        <ul class="squared-ul">
-                            <li>Оклейка стен обоями</li>
-                            <li>Плиточные работы</li>
-                            <li>Монтаж полового покрытия (линолеум, либо ламинат)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion">
-                    <div class="accordion-left">
-                        Капитальный ремонт
-                    </div>
-                    <div class="accordion-right">
-                        от <span class="price">8500</span> руб/м²
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="multilist">
-                        <ul class="squared-ul">
-                            <li>Демонтаж перегородок</li>
-                            <li>Перенос дверных проемов</li>
-                            <li>Демонтаж полового покрытия</li>
-                            <li>Натяжные потолки</li>
-                            <li>Возведение перегородок</li>
-                            <li>Штукатурка стен и дельнейшая подготовка к финишной отделке</li>
-                        </ul>
-                        <ul class="squared-ul">
-                            <li>Электромонтажные работы</li>
-                            <li>Сантехнические работы</li>
-                            <li>Оклейка стен обоями</li>
-                            <li>Плиточные работы</li>
-                            <li>Монтаж полового покрытия (линолеум, либо ламинат)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion">
-                    <div class="accordion-left">
-                        Эксклюзивный Ремонт
-                    </div>
-                    <div class="accordion-right">
-                        от <span class="price">120000</span> руб/м²
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="multilist">
-                        <ul class="squared-ul">
-                            <li>Выполняется по дизайн проекту</li>
-                            <li>Помощь в закупке всех необходимых материалов</li>
-                            <li>Демонтажные работы (по необходимости)</li>
-                            <li>Возведение стен</li>
-                            <li>Электромонтажные работы</li>
-                        </ul>
-                        <ul class="squared-ul">
-                            <li>Сантехнические работы</li>
-                            <li>Плиточные работы</li>
-                            <li>Устройство потолков</li>
-                            <li>Стяжка пола</li>
-                            <li>Настил полов</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion">
-                    <div class="accordion-left">
-                        Дизайн-проект
-                    </div>
-                    <div class="accordion-right">
-                        от <span class="price">3800</span> руб/м²
-                    </div>
-                </div>
-                <div class="panel">
-                    <div>В соответсвии с пожеланиями заказчика</div>
-                </div>
-
-            </div>
-        </div>
-        <div class="portfolio-block">
-            <h2 class="h1">Примеры наших работ</h2>
-            <div class="slider carousel">
-                <div class="slider-item fade">
-                    <div class="portfolio-block-left">
-                        <picture>
-                            <source srcset="img/img3-min.webp" type="image/webp">
-                            <source srcset="img/img3-min.jpg" type="image/jpeg">
-                            <img class="img-big3" src="img/img3-min.jpg" alt="Капитальный ремонт">
-                        </picture>
-                    </div>
-                    <div class="portfolio-block-right">
-                        <div class="item-header">Капитальный ремонт</div>
-                        <div class="item-short">Квартира 120м²</div>
-                        <div class="item-description">
-                            <p>Хозяева квартиры хотели сделать квартиру светлой и воздушной. Стены в гостиной — сложного
-                                белого цвета с легкой примесью серого и желтого пигмента. Интерьер дополняют деревянные
-                                подоконники. В ванной — тёмно-серые стены и белая глянцевая плитка.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item fade">
-                    <div class="portfolio-block-left">
-                        <picture>
-                            <source srcset="img/img4-min.webp" type="image/webp">
-                            <source srcset="img/img4-min.jpg" type="image/jpeg">
-                            <img class="img-big3" src="img/img4-min.jpg" alt="Капитальный ремонт">
-                        </picture>
-                    </div>
-                    <div class="portfolio-block-right">
-                        <div class="item-header">Капитальный ремонт 2</div>
-                        <div class="item-short">Квартира 120м²</div>
-                        <div class="item-description">
-                            <p>Хозяева Хозяева Хозяева Хозяева квартиры хотели сделать квартиру светлой и воздушной.
-                                Стены в гостиной — сложного Хозяева Хозяева Хозяева Хозяева Хозяева Хозяева Хозяева
-                                белого цвета с легкой примесью серого и желтого пигмента. Интерьер дополняют деревянные
-                                подоконники. В ванной — тёмно-серые стены и белая глянцевая плитка.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item fade">
-                    <div class="portfolio-block-left">
-                        <picture>
-                            <source srcset="img/img4-min.webp" type="image/webp">
-                            <source srcset="img/img4-min.jpg" type="image/jpeg">
-                            <img class="img-big3" src="img/img4-min.jpg" alt="Капитальный ремонт">
-                        </picture>
-                    </div>
-                    <div class="portfolio-block-right">
-                        <div class="item-header">Капитальный ремонт 3</div>
-                        <div class="item-short">Квартира 120м²</div>
-                        <div class="item-description">
-                            <p>Хозяева квартиры хотели сделать квартиру светлой и воздушной. Стены в гостиной — сложного
-                                белого цвета с легкой примесью серого и желтого пигмента. Интерьер дополняют деревянные
-                                подоконники. В ванной — тёмно-серые стены и белая глянцевая плитка.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <div class="arrows">
-                    <div class="arrow prev">
-                        <div class="arrow-left"></div>
-                    </div>
-                    <div class="arrow next">
-                        <div class="arrow-right"></div>
-                    </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">2009</div>
+                    <div class="advantages-item-text">Работаем с&nbsp;2009 года</div>
                 </div>
             </div>
-        </div>
-        <div class="reviews-block">
-            <h2 class="h1">Отзывы клиентов</h2>
-            <div class="slider2 carousel">
-                <div class="review-item fade">
-                    <div class="review-item-part-top">
-                        <div class="review-img">
-                            <picture>
-                                <source srcset="img/profile1.webp" type="image/webp">
-                                <source srcset="img/profile1.png" type="image/jpeg">
-                                <img src="img/profile1.png" alt="Ольга Астафьева">
-                            </picture>
-                        </div>
-                        <div class="review-item-right">
-                            <div class="review-name">Ольга Астафьева</div>
-                            <div class="review-project">Капитальный ремонт квартиры</div>
-                        </div>
-                    </div>
-                    <div class="review-desription">
-                        <p>Достойная компания в плане ремонта. Отремонтировали лоджию. Нам нужно было после переезда
-                            там
-                            менять все буквально, в том числе крышу делать, утеплять все и гидроизолировать
-                            пространство. Для меня было важно отдать все в одни руки - сделать дизайн, потом отделку
-                            с
-                            закупкой материалов.</p>
-                    </div>
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <picture>
+                        <source srcset="img/sprite2.webp" type="image/webp">
+                        <source srcset="img/sprite2.png" type="image/jpeg">
+                        <img class="icon-check_mark" src="img/sprite2.png" alt="Завершённые проекты">
+                    </picture>
                 </div>
-                <div class="review-item fade">
-                    <div class="review-item-part-top">
-                        <div class="review-img">
-                            <picture>
-                                <source srcset="img/profile2.webp" type="image/webp">
-                                <source srcset="img/profile2.png" type="image/jpeg">
-                                <img src="img/profile2.png" alt="Александр Меньшинский">
-                            </picture>
-                        </div>
-                        <div class="review-item-right">
-                            <div class="review-name">Александр Меньшинский</div>
-                            <div class="review-project">Ремонт в новостройке</div>
-                        </div>
-                    </div>
-                    <div class="review-desription">
-                        <p>Достойная компания в плане ремонта. Отремонтировали лоджию. Нам нужно было после переезда
-                            там
-                            менять все буквально, в том числе крышу делать, утеплять все и гидроизолировать
-                            пространство. Для меня было важно отдать все в одни руки - сделать дизайн, потом отделку
-                            с
-                            закупкой материалов.</p>
-                    </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">500</div>
+                    <div class="advantages-item-text">Завершённых проектов</div>
                 </div>
-                <div class="review-item fade">
-                    <div class="review-item-part-top">
-                        <div class="review-img">
-                            <picture>
-                                <source srcset="img/profile2.webp" type="image/webp">
-                                <source srcset="img/profile2.png" type="image/jpeg">
-                                <img src="img/profile2.png" alt="Александр Меньшинский">
-                            </picture>
-                        </div>
-                        <div class="review-item-right">
-                            <div class="review-name">Александр Меньшинский 2</div>
-                            <div class="review-project">Ремонт в новостройке</div>
-                        </div>
-                    </div>
-                    <div class="review-desription">
-                        <p>Достойная компания в плане ремонта. Отремонтировали лоджию. Нам нужно было после переезда
-                            там
-                            менять все буквально, в том числе крышу делать, утеплять все и гидроизолировать
-                            пространство. Для меня было важно отдать все в одни руки - сделать дизайн, потом отделку
-                            с
-                            закупкой материалов.</p>
-                    </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <picture>
+                        <source srcset="img/sprite2.webp" type="image/webp">
+                        <source srcset="img/sprite2.png" type="image/jpeg">
+                        <img class="icon-command" src="img/sprite2.png" alt="Специалисты в команде">
+                    </picture>
                 </div>
-                <div class="review-item fade">
-                    <div class="review-item-part-top">
-                        <div class="review-img">
-                            <picture>
-                                <source srcset="img/profile1.webp" type="image/webp">
-                                <source srcset="img/profile1.png" type="image/jpeg">
-                                <img src="img/profile1.png" alt="Ольга Астафьева">
-                            </picture>
-                        </div>
-                        <div class="review-item-right">
-                            <div class="review-name">Ольга Астафьева 2</div>
-                            <div class="review-project">Капитальный ремонт квартиры</div>
-                        </div>
-                    </div>
-                    <div class="review-desription">
-                        <p>Достойная компания в плане ремонта. Отремонтировали лоджию. Нам нужно было после переезда
-                            там
-                            менять все буквально, в том числе крышу делать, утеплять все и гидроизолировать
-                            пространство. Для меня было важно отдать все в одни руки - сделать дизайн, потом отделку
-                            с
-                            закупкой материалов.</p>
-                    </div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">125</div>
+                    <div class="advantages-item-text">Специалистов в&nbsp;команде</div>
                 </div>
-                <div class="arrow prev">
-                    <div class="arrow-left"></div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-left">
+                    <picture>
+                        <source srcset="img/sprite2.webp" type="image/webp">
+                        <source srcset="img/sprite2.png" type="image/jpeg">
+                        <img class="icon-equipment" src="img/sprite2.png" alt="Количество единиц техники">
+                    </picture>
                 </div>
-                <div class="arrow next">
-                    <div class="arrow-right"></div>
+                <div class="advantages-item-right">
+                    <div class="advantages-item-name">30</div>
+                    <div class="advantages-item-text">Единиц техники</div>
                 </div>
             </div>
         </div>
@@ -466,7 +204,7 @@
         </div>
     </footer>
     <div class="sidebar-overlay"></div>
-    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
