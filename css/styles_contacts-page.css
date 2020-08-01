@@ -63,18 +63,18 @@
     background-size: 72px;
 }
 .contacts .icon-vk {
-    background-position: -48px 0px;
+    background-position: -24px -24px;
 }
 .contacts .icon-yt {
-    background-position: 0px -24px;
+    background-position: 0px -48px;
 }
 .contacts .icon-inst {
-    background-position: -48px -24px;
+    background-position: -24px -48px;
 }
 .contacts .social .icon-fb {
     width: 30px;
     height: 30px;
-    background-position: -36px -36px;
+    background-position: 0px -36px;
     background-size: 108px;
 }
 .contacts .socials >.social:nth-child(2) {

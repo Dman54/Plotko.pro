@@ -168,6 +168,7 @@ button {
 .first-container_left {
     align-self: flex-end;
     padding-right: 90px;
+    flex: 1;
 }
 .img-big {
     height: 400px;
@@ -640,6 +641,11 @@ button {
 .socials {
     display: flex;
 }
+.socials-text {
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
 .social {
     width: 35px;
     height: 35px;
@@ -679,10 +685,10 @@ button {
     display: inline-block;
     vertical-align: middle;
     margin-right: 14px;
-    background-position: 0px -48px;
+    background-position: -48px 0px;
 }
 .icon-phone {
-    background-position: -24px -48px;
+    background-position: -48px -24px;
 }
 .icon-email {
     background-position: 0px 0px;
@@ -694,17 +700,17 @@ button {
     background-size: 60px;
 }
 .icon-fb {
-    background-position: -30px -30px;
+    background-position: 0px -30px;
     background-size: 90px;
 }
 .icon-vk {
-    background-position: -40px 0px;
+    background-position: -20px -20px;
 }
 .icon-yt {
-    background-position: 0px -20px;
+    background-position: 0px -40px;
 }
 .icon-inst {
-    background-position: -40px -20px;
+    background-position: -20px -40px;
 }
 .fade {
     -webkit-animation-name: fade;
