@@ -154,8 +154,11 @@ button {
     padding: 6.5px 10px;
     text-align: right;
 }
-.submenu>li:first-child a {
+.submenu>li a {
     border-bottom: 1px solid #C4C4C4;
+}
+.submenu>li:last-child a {
+    border-bottom: none;
 }
 .first-container {
     width: 1043px;
@@ -1113,7 +1116,7 @@ button {
     .first-nav li:hover > .submenu {
         display: block;
     }
-    .submenu>li:first-child a {
+    .submenu>li a {
         border: none;
     }
     .submenu>li a {

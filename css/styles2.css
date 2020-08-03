@@ -17,7 +17,7 @@
     width: 16px;
     height: 16px;
     background-size: 48px;
-    background-position: -16px -32px;
+    background-position: -32px -16px;
 }
 .cost-block {
     display: flex;
