@@ -406,30 +406,3 @@
         margin-right: auto;
     }
 }
-
-
-/* COPY TO ANOTHER PAGE ! */
-.icon-07_almaz_bur {
-    background-image: url(../img/sprite3.png);
-    background-position: -86px 0px;
-    width: 85px;
-    height: 75px;
-}
-.icon-08_almaz_rezka {
-    background-image: url(../img/sprite3.png);
-    background-position: 0px -77px;
-    width: 85px;
-    height: 75px;
-}
-.icon-09_usilenie_proyomov {
-    background-image: url(../img/sprite3.png);
-    background-position: -85px -77px;
-    width: 85px;
-    height: 75px;
-}
-.icon-10_demontag_jobs {
-    background-image: url(../img/sprite3.png);
-    background-position: -171px 0px;
-    width: 85px;
-    height: 75px;
-}
