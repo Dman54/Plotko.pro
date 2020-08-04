@@ -1,3 +1,6 @@
+.select-tabs {
+    display: none;
+}
 .natyajki .first-container_left {
     padding-right: 30px;
 }
@@ -148,9 +151,11 @@
     font-size: 30px;
     line-height: 130%;
     color: #444444;
+    align-self: center;
 }
 .cur_item-wrapper {
     display: flex;
+    position: relative;
 }
 .cur_item-img {
     flex: 3;
@@ -200,7 +205,6 @@
     line-height: 130%;
     color: #444444;
 }
-/* .cur-maintext */
 .cur-text1 {
     margin-bottom: 15px;
 }
@@ -363,8 +367,43 @@
     bottom: 50px;
 }
 
-
-
+@media (max-width: 1300px) {
+    .cost-prev {
+        left: -25px;
+    }
+    .cost-next {
+        right: -25px;
+    }
+}
+@media (max-width: 1214px) {
+    .natyajki .portfolio-block-right {
+        padding: 30px;
+    }
+    .natyajki .slider.carousel {
+        padding: 0;
+        height: 500px;
+    }
+    .natyajki .portfolio-block-left {
+        margin-top: 0;
+    }
+    .natyajki .arrows {
+        left: 490px;
+        bottom: 30px;
+    }
+    .natyajki .dots {
+        bottom: 40px;
+    }
+}
+@media (max-width: 1100px) {
+    .natyajki .first-container .h1 {
+        margin-bottom: 74px;
+    }
+}
+@media (max-width: 1020px) {
+    .natyajki .first-container .h1 {
+        margin-bottom: 37px;
+    }
+}
 @media (max-width: 1000px) {
     .natyajki .why-content {
         flex-wrap: wrap;
@@ -378,9 +417,241 @@
     .natyajki .why-content .why-item:nth-child(3n) {
         margin-right: 0;
     }
+    .cur_price-wrapper {
+        flex-wrap: wrap;
+    }
+    .range-wrapper {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+    .range-wrapper [type=range] {
+        width: 100%;
+    }
 }
-
+@media (max-width: 990px) {
+    .natyajki .slider.carousel {
+        height: 400px;
+    }
+    .natyajki .dots {
+        bottom: 20px;
+    }
+    .natyajki .item-description {
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .natyajki .item-description >* {
+        min-width: calc(50% - 15px);
+    }
+    .natyajki .item-description >*:nth-child(2n+1) {
+        margin-right: 30px;
+    }
+    .natyajki .item-top {
+        margin-bottom: 0;
+    }
+    .natyajki .item-price {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .natyajki .portfolio-block-right {
+        padding: 20px;
+    }
+    .natyajki .portfolio-block-right .btn {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: calc(100% - 40px);
+    }
+    .natyajki .arrows {
+        left: unset;
+        right: 0;
+        bottom: unset;
+        top: -65px;
+    }
+    .natyajki .portfolio-block .h1 {
+        width: calc(100% - 110px);
+    }
+}
+@media (max-width: 900px) {
+    .natyajki .slider.carousel {
+        height: 300px;
+    }
+    .natyajki .cur-maintext {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 20px;
+    }
+    .cur_item-part {
+        position: relative;
+        height: 100%;
+    }
+    .cur_item-part .btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .cost-potolki-block {
+        margin-top: 50px;
+    }
+    .natyajki .portfolio-block {
+        margin-top: 0;
+    }
+    .cur_item-part {
+        width: 316px;
+    }
+    .natyajki .portfolio-block-right .btn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 710px) {
+    .natyajki .why-block .h1 {
+        margin-bottom: 10px;
+    }
+    .cost-potolki-block {
+        margin-top: 30px;
+    }
+    .natyajki .arrows {
+        top: -45px;
+    }
+    .natyajki .slider.carousel {
+        height: 200px;
+    }
+    .natyajki .item-price {
+        margin-top: 12px;
+    }
+    .cost-potolki-block .h1 {
+        margin-bottom: 10px;
+    }
+    .materials-menu-wrapper {
+        margin-bottom: 24px;
+    }
+    .range-wrapper {
+        margin-bottom: 14px;
+    }
+    .cur_price-wrapper {
+        margin-bottom: 20px;
+    }
+    .cur-text1 {
+        margin-bottom: 10px;
+    }
+    .cur-text2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cur_item-wrapper {
+        display: block;
+    }
+    .img-big_cur {
+        width: calc(100% + 54px);
+        margin-left: -27px;
+    }
+    .cur_item-text {
+        margin-left: 0;
+    }
+    .cur_item-img {
+        margin-bottom: 20px;
+    }
+    .cur_item-part {
+        width: unset;
+    }
+    .cur_item-part .btn {
+        position: unset;
+        max-width: 340px;
+    }
+    .cost-prev, .cost-next {
+        top: 35px;
+    }
+}
+@media (max-width: 620px) {
+    .natyajki .slider .slider-item {
+        flex-direction: column;
+    }
+    .natyajki .img-big3 {
+        width: calc(100% + 54px);
+        margin-left: -27px;
+        height: auto;
+        max-height: 336px;
+        margin-bottom: 20px;
+    }
+    .natyajki .slider.carousel {
+        background-color: unset;
+        height: auto;
+    }
+    .natyajki .dots {
+        bottom: 470px;
+    }
+    .natyajki .item-description {
+        position: unset;
+        display: block;
+        min-width: unset;
+    }
+    .natyajki .item-top {
+        margin-bottom: 0;
+        order: -1;
+    }
+    .natyajki .item-price {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .natyajki .item-description >*:nth-child(2n+1) {
+        margin-right: 0;
+    }
+    .natyajki .portfolio-block-right {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .natyajki .portfolio-block-right .btn {
+        position: unset;
+        width: unset;
+        max-width: 340px;
+        margin-top: 20px;
+    }
+    .natyajki .portfolio-block {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 550px) {
+    .img-big_cur {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+    .natyajki .img-big3 {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+    .select-tabs {
+        display: block;
+        margin-bottom: 24px;
+    }
+    .form-control {
+        width: 100%;
+        height: 30px;
+        padding: 5px 0;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        color: #444444;
+        background-color: transparent;
+        background-clip: padding-box;
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid #444444;
+    }
+    .materials-menu-wrapper {
+        display: none;
+    }
+}
 @media (max-width: 480px) {
+    .cur_metrag {
+        font-size: 20px;
+    }
+    .cur_price {
+        font-size: 20px;
+    }
     .natyajki .why-block .h1 {
         text-align: center;
     }

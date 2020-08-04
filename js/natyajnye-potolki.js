@@ -1,4 +1,4 @@
-var slideIndex2, width, slider2_width = 800;
+var slideIndex2, width, slider2_width = 800, problem_height = 900;
 width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 // console.log(width);
 window.addEventListener('resize', windowresize);
@@ -6,6 +6,7 @@ function windowresize() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // location.reload();
 }
+
 
 var materials_menu_wrapper = document.querySelector('.materials-menu-wrapper');
 var materials_menu = document.querySelector('.materials-menu');
@@ -18,6 +19,20 @@ document.addEventListener("DOMContentLoaded", ready);
 function ready() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // console.log(width);
+
+    function set_problem_height() {
+        if (width > problem_height) {
+            return;
+        }
+        var maxHeight = document.querySelector('.cur-maintext').offsetHeight;
+        document.querySelector('.cost-potolki-block').style.marginBottom = 70 + maxHeight + 'px';
+        if (width > 710) {
+            document.querySelector('.cost-potolki-block').style.marginBottom = 70 + maxHeight + 'px';
+        } else {
+            document.querySelector('.cost-potolki-block').style.marginBottom = 50 + maxHeight + 'px';
+        }
+    }
+    set_problem_height();
 
     const _R = document.querySelector('[type=range]');
     document.documentElement.classList.add('js');
@@ -66,27 +81,35 @@ function ready() {
     })
 
     var slides0 = document.querySelectorAll(".cur_item");
-    // var slideIndex0 = 1;
     var materials_menu_els = document.querySelectorAll('.materials-menu li');
+
+    function changeSlide(item, index) {
+        Array.from(materials_menu_els).forEach((item, index) => {
+            item.classList.remove('active');
+        })
+        item.classList.add('active');
+        Array.from(slides0).forEach((item, index) => {
+            item.classList.remove('active');
+        })
+        slides0[index].classList.add('active');
+        cur_price_low = eval(document.querySelectorAll('.cur_price_low')[index].textContent);
+        cur_price_high = eval(document.querySelectorAll('.cur_price_high')[index].textContent);
+        cur_price_number_low.textContent = Math.ceil(+metrag.value * cur_price_low);
+        cur_price_number_high.textContent = Math.ceil(+metrag.value * cur_price_high);
+    }
+
     Array.from(materials_menu_els).forEach((item, index) => {
         item.addEventListener('click', event => {
             if (item.classList.contains('active')) {
                 return;
             }
-            Array.from(materials_menu_els).forEach((item, index) => {
-                item.classList.remove('active');
-            })
-            item.classList.add('active');
-            Array.from(slides0).forEach((item, index) => {
-                item.classList.remove('active');
-            })
-            slides0[index].classList.add('active');
-            cur_price_low = eval(document.querySelectorAll('.cur_price_low')[index].textContent);
-            cur_price_high = eval(document.querySelectorAll('.cur_price_high')[index].textContent);
-            cur_price_number_low.textContent = Math.ceil(+metrag.value * cur_price_low);
-            cur_price_number_high.textContent = Math.ceil(+metrag.value * cur_price_high);
+            changeSlide(item, index);
         })
-    })
+    });
+    var select_tabs = document.querySelector('.select-tabs');
+    select_tabs.addEventListener('change', e => {
+        changeSlide(e.target, e.target.selectedIndex);
+    }, false);
 
     const metrag = document.getElementById('metrag');
     const cur_metrag = document.querySelector('.cur_metrag_number');
@@ -99,7 +122,6 @@ function ready() {
         cur_price_number_low.textContent = Math.ceil(+e.target.value * cur_price_low);
         cur_price_number_high.textContent = Math.ceil(+e.target.value * cur_price_high);
     }, false);
-
     // accordion
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -149,10 +171,14 @@ function ready() {
         }
         slides[slideIndex - 1].style.display = "flex";
         dots[slideIndex - 1].className += " active";
-        setHeight();
+        setHeight(slides[slideIndex - 1]);
     }
-    function setHeight() {
+    function setHeight(el) {
         if (width > 990) {
+            return;
+        }
+        if (width < 621) {
+            document.querySelector('.natyajki .dots').style.bottom = 46 + el.querySelector('.portfolio-block-right').offsetHeight + 'px';
             return;
         }
         var maxHeight = 0;
